@@ -1,0 +1,48 @@
+name: leicht
+type: theme
+description: 'A base theme with sensible default CSS classes added. Learn how to use Classy as a base theme in the <a href="https://www.drupal.org/docs/8/theming">Drupal 8 Theming Guide</a>.'
+package: Core
+# Defines the base theme
+base theme: classy
+
+version: VERSION
+core: 8.x
+
+regions:
+  header_left: 'Header left'
+  header_right: 'Header right'
+  primary_menu: 'Primary menu'
+  secondary_menu: 'Secondary menu'
+  page_top: 'Page top'
+  page_bottom: 'Page bottom'
+  highlighted: Highlighted
+  help: Help
+  breadcrumb: Breadcrumb
+  content: Content
+  sidebar_first: 'Sidebar first'
+  sidebar_second: 'Sidebar second' 
+  footer: Footer
+  footer2: Footer 2
+  copyright: Copyright
+
+libraries:
+  - leicht/global
+  - leicht/base
+  - leicht/messages
+  - core/normalize
+  - leicht/font
+  - leicht/iconfont
+  - leicht/hamburgers
+  - leicht/bootstrap-grid
+
+libraries-extend:
+  user/drupal.user:
+    - leicht/user
+  core/drupal.dropbutton:
+    - leicht/dropbutton
+  core/drupal.dialog:
+    - leicht/dialog
+  file/drupal.file:
+    - leicht/file
+  core/drupal.progress:
+    - leicht/progress

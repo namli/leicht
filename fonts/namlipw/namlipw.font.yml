@@ -1,0 +1,6 @@
+name: Namli ProWeb
+type: font
+custom_families:
+  - namlipw
+custom_style_css:
+  - css/namlipw.css

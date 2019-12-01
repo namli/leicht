@@ -1,0 +1,62 @@
+<?php
+
+// Add your custom theme override functions here.
+
+/**
+ * Implements hook_preprocess_block()
+ */
+function leicht_preprocess_block(&$variables) {
+    // Custom block type helper classes.
+  if ($variables['elements']['#base_plugin_id'] == 'block_content') {
+    $blockType = strtr($variables['content']['#block_content']->bundle(), '_', '-');
+    $variables['attributes']['class'][] = 'block--type-' . $blockType;
+  } 
+}
+
+/**
+ * Implements template_preprocess_field().
+ */
+function leicht_preprocess_field(&$variables, $hook) {
+}
+
+/**
+ * Implements template_preprocess_html().
+ *
+ * Adds additional classes
+ */
+function leicht_preprocess_html(&$variables) {
+  $lang_code = \Drupal::languageManager()->getCurrentLanguage()->getId();
+  $variables['attributes']['class'][] = $lang_code;
+}
+
+/**
+ * Implements template_preprocess_node
+ *
+ * Add template suggestions and classes
+ */
+function leicht_preprocess_node(&$variables) {
+  if ($node = \Drupal::request()->attributes->get('node')) {
+    $variables['attributes']['class'][] = 'node-' . $node->id();
+  }
+}
+
+/**
+ * Implements template_preprocess_page
+ *
+ * Add convenience variables and template suggestions
+ */
+function leicht_preprocess_page(&$variables) {
+}
+
+/**
+ * Implements template_preprocess_views_view().
+ */
+function leicht_preprocess_views_view(&$variables) {}
+
+function leicht_preprocess_input(&$variables) {
+  if ($variables['attributes']['type'] == 'submit') {
+    $variables['attributes']['class'][] = 'hbtnblk';
+    $variables['attributes']['class'][] = 'hb-border-bottom-br3-blk';
+  }
+
+}

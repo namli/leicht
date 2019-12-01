@@ -1,0 +1,195 @@
+font:
+  version: VERSION
+  css:
+    base:
+        fonts/Lato/latofonts.css: {}
+iconfont:
+  version: VERSION
+  css:
+    base:
+      fonts/namlipw/css/namlipw.css: {}
+hamburgers:
+  version: VERSION
+  css:
+    base: 
+      lib/hamburgers/hamburgers.min.css: {}
+bootstrap-grid:
+  version: VERSION
+  css:
+    base: 
+      lib/bootstrap-grid/bootstrap-grid.min.css: {}      
+animatecss:
+  version: VERSION
+  css:
+    base: 
+      lib/animate.css/animate.min.css: {}
+fab:
+  version: VERSION
+  css:
+    base:
+      lib/fab/css/mfb.min.css: {}
+  js:
+    lib/fab/js/mfb.min.js: {}
+slick:
+  version: VERSION
+  css:
+    base:
+      lib/slick/slick.css: {}
+      lib/slick/slick-theme.css: {}
+  js:
+    lib/slick/slick.min.js: {}    
+mhead:
+  version: VERSION
+  css:
+    base:
+      lib/mhead/jquery.mhead.css: {}
+  js:
+    lib/mhead/jquery.mhead.js: {}   
+smoothscroll:
+  version: VERSION
+  js:
+    lib/smoothscroll/smooth-scroll.polyfills.min.js: {}
+waypoints:
+  version: VERSION
+  js:
+    lib/waypoints/jquery.waypoints.min.js: {}    
+jquery.counterup:
+  version: VERSION
+  js:
+    lib/counterup/jquery.counterup.min.js: {}    
+resizesensor:
+  version: VERSION
+  js:
+    lib/resizesensor/resizesensor.js: {}      
+stickysidebar:
+  version: VERSION
+  js:
+    lib/sticky-sidebar/jquery.sticky-sidebar.min.js: {}    
+imagesloaded:
+  version: VERSION
+  js:
+    lib/imagesloaded/imagesloaded.pkgd.min.js: {}   
+cssmodal:
+  version: VERSION
+  css:
+    base:
+      lib/css-modal/css/index.css: {}
+global:
+  version: VERSION
+  css:
+    theme:
+      css/custom/styles.css: { weight: -30 }
+  js:
+    js/leicht.js: {}
+  dependencies:
+      - core/jquery
+      - core/drupal.ajax
+      - core/drupal
+      - core/drupalSettings
+      - core/jquery.once
+fancybox:
+  version: VERSION
+  css:
+    theme:
+      lib/fancybox/jquery.fancybox.min.css: { weight: -30 }
+  js:
+    lib/fancybox/jquery.fancybox.min.js: {}
+base:
+  version: VERSION
+  css:
+    component:
+      css/components/action-links.css: { weight: -10 }
+      css/components/breadcrumb.css: { weight: -10 }
+      css/components/button.css: { weight: -10 }
+      css/components/collapse-processed.css: { weight: -10 }
+      css/components/container-inline.css: { weight: -10 }
+      css/components/details.css: { weight: -10 }
+      css/components/exposed-filters.css: { weight: -10 }
+      css/components/field.css: { weight: -10 }
+      css/components/form.css: { weight: -10 }
+      css/components/icons.css: { weight: -10 }
+      css/components/inline-form.css: { weight: -10 }
+      css/components/item-list.css: { weight: -10 }
+      css/components/link.css: { weight: -10 }
+      css/components/links.css: { weight: -10 }
+      css/components/menu.css: { weight: -10 }
+      css/components/more-link.css: { weight: -10 }
+      css/components/pager.css: { weight: -10 }
+      css/components/tabledrag.css: { weight: -10 }
+      css/components/tableselect.css: { weight: -10 }
+      css/components/tablesort.css: { weight: -10 }
+      css/components/tabs.css: { weight: -10 }
+      css/components/textarea.css: { weight: -10 }
+      css/components/ui-dialog.css: { weight: -10 }
+
+book-navigation:
+  version: VERSION
+  css:
+    component:
+      css/components/book-navigation.css: {}
+
+dialog:
+  version: VERSION
+  css:
+    component:
+      css/components/dialog.css: { weight: -10 }
+
+dropbutton:
+  version: VERSION
+  css:
+    component:
+      css/components/dropbutton.css: { weight: -10 }
+
+file:
+  version: VERSION
+  css:
+    component:
+      css/components/file.css: { weight: -10 }
+
+forum:
+  version: VERSION
+  css:
+    component:
+      css/components/forum.css: { weight: -10 }
+
+image-widget:
+  version: VERSION
+  css:
+    component:
+      css/components/image-widget.css: {}
+
+indented:
+  version: VERSION
+  css:
+    component:
+      css/components/indented.css: {}
+
+messages:
+  version: VERSION
+  css:
+    component:
+      css/components/messages.css: { weight: -10 }
+
+node:
+  version: VERSION
+  css:
+    component:
+      css/components/node.css: { weight: -10 }
+
+progress:
+  version: VERSION
+  css:
+    component:
+      css/components/progress.css: { weight: -10 }
+
+search-results:
+  version: VERSION
+  css:
+    component:
+      css/components/search-results.css: {}
+
+user:
+  version: VERSION
+  css:
+    component:
+      css/components/user.css: { weight: -10 }
